@@ -10,7 +10,7 @@ Quickmake will compile all C++ files in your project without any need for makefi
 ```$ python3 quickmake.py```
 
 If you wanna specify compiler flags, libraries, etc you'll need to generate and edit the config file, to create such run:\
-```$ python3 quickmake.py --createconfig```\
+```$ python3 quickmake.py --createconfig```
 
-If your quickmake config file isn't named 'makeconfig' you'll need to specify the name of the file:\
+Unless your config file isn't named 'makeconfig' you'll need to specify the name of the file:\
 ```$ python3 quickmake.py fancyconfig.txt```
