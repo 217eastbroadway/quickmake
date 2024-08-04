@@ -1,13 +1,9 @@
 import os
 import subprocess
 import sys
-
-def fixPath(path):
-    if not path.endswith("/") and not path.endswith("\\"):
-        return path + '/'
+from compileMachineMisc import fixPath
+from compileMachineMisc import getObjectFiles
     
-    return path
-
 def queueFiles(dir, compileQueue):
     for x in os.listdir(dir):
         if os.path.isdir(x):
@@ -16,16 +12,6 @@ def queueFiles(dir, compileQueue):
         if x.endswith(".cpp"):
             compileQueue.append(fixPath(dir) + x)
 
-def getObjectFiles(compileQueue):
-    objectQueue = ""
-
-    for file in compileQueue:
-        temp = file.split("/")[-1];
-        temp = temp[slice(0, len(temp)-4)]
-        temp += ".o"
-        objectQueue += temp + ' '
-
-    return objectQueue
 
 def compileFiles(compileQueue):
     for file in compileQueue:
