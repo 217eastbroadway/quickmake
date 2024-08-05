@@ -2,13 +2,16 @@ import os
 import sys
 import subprocess
 import help
-from queuebuilder import queueFiles
-from queuebuilder import compileFiles
-
+from compileMachine import queueFiles
+from compileMachine import compileFiles
+from fileHandler import createConfig
 #main():
 if sys.argv[1] == "--help":
     help.getHelpOut()
     quit()
+
+if sys.argv[1] == "--createconfig":
+    createConfig()
 
 if len(sys.argv) < 3:
     print("Usage: ./quickmake.py [dir] [compiler]")

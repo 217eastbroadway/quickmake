@@ -1,0 +1,5 @@
+compiler = #Set your compiler here, the default compiler is g++.
+cflags = #Set your compiler flags here.
+output = #Set the output name of your project here (eg: app.exe)
+includepath = #Set the path to include files your project might need
+libpath = #Set the path to library files your project might need
