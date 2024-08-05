@@ -2,8 +2,10 @@
 An automated build system for C++ projects.
 
 ## Why is quickmake better?
-> Quickmake is able to build your project without needing any unnecessarily long makefiles, saving you time and work!
-> Quickmake is also cross-platform and easily portable!
+<ul>
+<li> Quickmake is able to build your project without needing any unnecessarily long makefiles, saving you time and work!
+<li> Quickmake is also cross-platform and easily portable!
+</ul>
 
 ## Usage
 Quickmake will compile all C++ files in your project without any need for makefiles!\
