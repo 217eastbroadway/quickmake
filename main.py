@@ -1,3 +1,0 @@
-import fileHandler
-
-fileHandler.createConfig()
